@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
   <ul>
     <li><a href="HomePage.html">Home</a></li>
@@ -16,7 +15,9 @@
     <li><a href="BlogPage.html">Blog</a></li>
     <li><a href="ContactPage.html">Contact</a></li>
     <li><a href="TestimonialsPage.html">Testimonials</a></li>
+    <li><a href="#" id="toggleMode">Display Mode</a></li>
   </ul>
+  <main>
   <br>
   <br>
   <br>
@@ -31,76 +32,166 @@
 <div class="gallery-container">
     <div class="gallery">
         <a target="_blank" href="pic3.jpg">
-          <img src="pic3.jpg" alt="Cinque Terre" >
+          <img src="pic3.jpg" alt="Cinque Terre" onclick="openLightbox();setCurrentSlide(1)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
       </div>
-      
       <div class="gallery">
         <a target="_blank" href="pic2.jpg">
-          <img src="pic2.jpg" alt="Forest" >
+          <img src="pic2.jpg" alt="Forest" onclick="openLightbox();setCurrentSlide(1)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
       </div>
       
       <div class="gallery">
         <a target="_blank" href="pic4.jpg">
-          <img src="pic4.jpg" alt="Mountains" >
+          <img src="pic4.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(1)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
 
       <div class="gallery">
         <a target="_blank" href="pic5.jpg">
-          <img src="pic5.jpg" alt="Mountains" >
+          <img src="pic5.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(2)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
     
       <div class="gallery">
         <a target="_blank" href="pic6.jpg">
-          <img src="pic6.jpg" alt="Mountains" >
+          <img src="pic6.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(3)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
       
       <div class="gallery">
         <a target="_blank" href="pic7.jpg">
-          <img src="pic7.jpg" alt="Mountains" >
+          <img src="pic7.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(4)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
       
       <div class="gallery">
         <a target="_blank" href="pic8.jpg">
-          <img src="pic8.jpg" alt="Mountains" >
+          <img src="pic8.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(5)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
       
       <div class="gallery">
         <a target="_blank" href="pic9.jpg">
-          <img src="pic9.jpg" alt="Mountains" >
+          <img src="pic9.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(6)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
 
       <div class="gallery">
         <a target="_blank" href="pic10.jpg">
-          <img src="pic10.jpg" alt="Mountains" >
+          <img src="pic10.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(7)">
         </a>
-        <div class="desc">Add a description of the image here</div>
+        <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
     </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="pic13.jpg">
+        <img src="pic13.jpg" alt="Mountains" onclick="openLightbox();setCurrentSlide(7)">
+      </a>
+      <div class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     <div id="lightbox" class="lightbox">
       <span class="close-button">&times;</span>
       <img id="lightbox-image" src="" alt="Full Size Image">
       <div id="lightbox-caption"></div>
     </div>
-    
 </div>
-</body>
-<footer>
+<div id="lightboxModal" class="lightbox">
+  <span class="close cursor" onclick="closeLightbox()">&times;</span>
+  <div class="lightbox-content">
+    <div class="slide">
+      <img src="pic4.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic5.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic6.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic7.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic8.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic9.jpg" style="width:100%">
+    </div>
+    <div class="slide">
+      <img src="pic10.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+  <p>© 2025 Your Name. All rights reserved.</p>
 </footer>
+</body>
 </html>
