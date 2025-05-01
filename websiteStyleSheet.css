@@ -1,9 +1,10 @@
 html, body {
-    height: 100%;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
   }
+
   
   main {
     flex: 1;
@@ -20,9 +21,6 @@ ul
     background-color: black;
     flex-wrap: wrap;
 }
-
-
-
 .light-mode ul
 {
     background-color: white;
@@ -102,7 +100,7 @@ body.light-mode
 h1 
 {
     color: aquamarine;
-    margin-left: 5%;
+    text-align: center;
 }
 .light-mode h1
 {
@@ -111,12 +109,13 @@ h1
 
 .gallery-container
 {
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 5%;
-    padding: 10%;
-    margin-bottom: px;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-auto-rows: auto;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: black;
 }
 .gallery
 {
@@ -127,7 +126,6 @@ h1
     color: #aaf0d1;
     box-sizing: border-box;
 }
-
 
 .light-mode
 {
@@ -257,7 +255,7 @@ label
   line-height: 1.6;          
   text-align: left;        
   word-wrap: break-word;      
-  background-color: azure;
+  background-color: white;
   border: solid ;
   font-size: 1.5em;
   font-family: 'Courier New', Courier, monospace;
@@ -267,7 +265,8 @@ div.blog
 {
     margin: auto;
     border: 1px solid black;
-    width: 25%;
+    width: 50%;
+    margin: 0 auto;
     overflow:hidden;
     white-space: nowrap;
     background-color: white;
@@ -277,7 +276,7 @@ div.blog
 div.blog img
 {
     object-fit: cover;
-    width: 100%px;
+    width: 100%;
     height: 100%;
     display: block;
 }
@@ -366,7 +365,6 @@ div.blog img
     top: 50%;
     color: aquamarine;
     font-size: 40px;
-    padding: 16px;
     margin-top: -50px;
     transition: 0.3s;
     user-select: none;
@@ -463,7 +461,7 @@ div.blog img
   }
   .blog-content
   {
-    font-size: small
+    font-size: large;
   }
   div.blog
   {

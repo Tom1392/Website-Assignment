@@ -41,7 +41,7 @@ function showSlide(n) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // ✅ Only run if contact form exists
+    // Only run if contact form exists
     const contactForm = document.getElementById("contactForm");
     if (contactForm) {
       contactForm.addEventListener("submit", function (event) {
@@ -50,14 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // ✅ Safe toggle
+    //Safe toggle
     const toggle = document.getElementById("toggleMode");
     if (toggle) {
       toggle.addEventListener("click", function (e) {
         e.preventDefault();
         document.body.classList.toggle("light-mode");
   
-        // Optional: store theme preference
+        // store theme preference
         if (document.body.classList.contains("light-mode")) {
           localStorage.setItem("theme", "light");
         } else {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // ✅ Load stored theme (optional)
+    //Load stored theme 
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "light") {
       document.body.classList.add("light-mode");
